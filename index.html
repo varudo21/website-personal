@@ -1,105 +1,228 @@
 <!DOCTYPE html>
-<html lang="en">
-  
-    <a href="https://yourlink.com" target="_blank">
-      <img
-        src="c:\Users\NAI MAK BUAT HOTU\Downloads\download (4).jpg"
-        alt="Our Team"
-        class="link-image"
-      />
-    </a>
-  </section>
+<html lang="pt">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BrightLaunch</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Escola UNTL</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f2f2f2;
+      }
+
+      .header {
+        background-color: #003366;
+        color: white;
+        padding: 30px;
+        text-align: center;
+        position: relative;
+      }
+
+      .logo {
+        width: 120px;
+        height: auto;
+        display: block;
+        margin: 0 auto 10px auto;
+      }
+
+      .navbar {
+        background-color: #00509e;
+        overflow: hidden;
+      }
+
+      .navbar a {
+        float: left;
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+
+      .navbar a:hover {
+        background-color: #003f7f;
+      }
+
+      .content {
+        padding: 20px;
+      }
+
+      .section {
+        display: none;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+      }
+
+      .active {
+        display: block;
+        opacity: 1;
+      }
+
+      .section img {
+        width: 100%;
+        max-width: 600px;
+        margin-top: 10px;
+        border-radius: 10px;
+      }
+
+      .grid-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding: 10px 0;
+      }
+
+      .grid-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        padding: 10px 0;
+      }
+
+      .card {
+        background-color: #ffffff;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .footer {
+        background-color: #003366;
+        color: white;
+        text-align: center;
+        padding: 10px;
+      }
+    </style>
   </head>
   <body>
-    <!-- Header -->
-    <!-- Logo with Image -->
-    <div class="logo">
-      <a href="#home">
+    <div class="header">
+      <img
+        src="c:\Users\NAI MAK BUAT HOTU\Downloads\download (1).png"
+        alt="Logo UNTL"
+        class="logo"
+      />
+      <h1>IGREJA DO NAZARENO TIMOR-LESTE</h1>
+      <p>“SANTU BA NAI”</p>
     </div>
 
-    <header>
-      <div class="container">
-        <div class="logo">BEM VINDU MAI HAU NIA WEBSITE</div>
-        <nav>
-          <ul>
-            <li><a href="#home">HAHU</a></li>
-            <li><a href="#features">FUTURO</a></li>
-            <li><a href="#about">KONA BA</a></li>
-            <li><a href="#contact">KONTAKTU</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <div class="navbar">
+      <a onclick="showSection('home')">HAU NIA HISTORIA</a>
+      <a onclick="showSection('sobre')">Kona ba</a>
+      <a onclick="showSection('matadalan')">Matadalan</a>
+      <a onclick="showSection('professor')">Professór</a>
+      <a onclick="showSection('kontaktu')">Numero Kontaktu</a>
+    </div>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-      <div class="container">
-        <h2>Futuro mak importante tebes ba ita nia nasaun  </h2>
+    <div class="content">
+      <!-- Home -->
+      <div id="home" class="section active">
+        <h2>Bem vimdu mai kadi kapasidade</h2>
         <p>
-          Hau nia website nee halo simples tanba hau foin aprende halo 
+          Ha’u nia naran kompletu Malale Varudo moris iha loron iha loron 21
+          janeiro 2004 moris husi Aman Naran Martinho Varudo no husi inan
+          Carolina Varudo no iha Maun nain 7 no bin nain rua moris iha aldeia
+          Maker suku Beloi no postu Atauro no Monisipiu Dili.
         </p>
-        <a href="#contact" class="btn">Komesa tama ba hau nia pajina</a>
+        <p>
+          no hau komesa hau nia estudu iha primaria iha tinan 2012 remata iha
+          tinan 2018 no kontinua hau nia estudu iha esnino basiku iha Ensino
+          basico Central Perola de Atauro iha tinan 2019 too 2021 no hau komesa
+          fila fali hau nia estudu iha eskola secundaria Tecnico Vocasiola ETI
+          Dili iha Tinan 2022 too 2024 no hau hau remata hau nia estudu iha
+          nivel sekundaria no agora hau kontinua fila fali hau nia estudu iha
+          Universidade Nasional Timor Lorosae UNTL iha Faculdade Enjenharia
+          Ciencia e Tecnolojia no Departamentu Enjenharia Infomatica Agradese ba
+          Aman Maromak ba Nia diak no kuidadu hau too ohin loron hau sei forsa
+          no vontade nafatin aprende hodi atinji hau nia mehi iha futuro oin mai
+          agradese ba Moris simples maibe nakonu ho domin ba buat hotu so
+          agrdese ba Aman Maromak deit.
+        </p>
+        <img
+          src="c:\Users\NAI MAK BUAT HOTU\Downloads\download (5).jpg"
+          alt="UNTL Campus"
+        />
       </div>
-    </section>
 
-    <!-- Features Section -->
-    <section id="features" class="container">
-      <h3>Hahuu ho ida nee </h3>
-      <div class="features-grid">
-        <div class="feature-box">
-          <h4>Parte Primeiro koalia kona ba</h4>
-          <p>
-            Moris nee fasil maibe nakonu ho difikuldade maibe tau konfiansa ba Nai Maromak
-          </p>
-        </div>
-        <div class="feature-box">
-          <h4>Parte Daruak koalia kona Familia</h4>
-          <p>
-            Hau moris iha familia nebee simples maibe nakonu ho domin 
-          </p>
-        </div>
-        <div class="feature-box">
-          <h4>Parte Datoluk koalia kona ba hau nia eskola </h4>
-          <p>Hau agora dadaun hau eskola iha Universidade Nasional Timor lorosae UNTL Maibe liu husi Esforsu mak bele sai susesu</p>
-        </div>
+      <!-- Sobre -->
+      <div id="sobre" class="section">
+        <h2>Sobre Escola</h2>
+        <p>
+          Escola UNTL fundadu husi Universidade Nasional Timor Lorosa’e hodi fó
+          preparasaun akademiku no moral ba estudante sira iha nivel segundáriu.
+        </p>
+        <p>
+          Eskola nee fó prioridade ba ensinu qualidade, disciplina, no
+          integridade ba gerasaun foun.
+        </p>
+        <img
+          src="c:\Users\NAI MAK BUAT HOTU\Downloads\download (5).jpg"
+          alt="Sobre UNTL"
+        />
       </div>
-    </section>
-    <section class="hero" id="home">
-    <div class="container">
-        <h2>Huu nia ideia ba hau nia futuro oin mai </h2>
-        <p>Esforsu mak hau nia susesu se ema neebe la esforsu entaun nia la susesu.</p>
-        <p>Fiar nafatin ba Nai Maromak sei ajuda.</p>
-        <p>Moris nee tenki tau konfiansa ba Maromak .</p>
-        <a href="#features" class="btn">HAHU</a>
+
+      <!-- Matadalan -->
+      <div id="matadalan" class="section">
+        <h2>Matadalan Sira</h2>
+        <div class="grid-2">
+          <div class="card">Matemátika</div>
+          <div class="card">Ciência</div>
+          <div class="card">Inglês</div>
+          <div class="card">Informátika</div>
+          <div class="card">História</div>
+          <div class="card">Geografia</div>
+        </div>
+        <img
+          src="c:\Users\NAI MAK BUAT HOTU\Downloads\download (6).jpg"
+          alt="Matadalan UNTL"
+        />
+      </div>
+
+      <!-- Professór -->
+      <div id="professor" class="section">
+        <h2>Lista Professór</h2>
+        <div class="grid-3">
+          <div class="card">Sr. João – Matemátika</div>
+          <div class="card">Sra. Maria – Inglês</div>
+          <div class="card">Sr. José – Informátika</div>
+          <div class="card">Sr. Lucas – Ciência</div>
+          <div class="card">Sra. Ana – História</div>
+          <div class="card">Sra. Teresa – Geografia</div>
+        </div>
+        <img
+          src="https://www.untl.edu.tl/public/img/staff.jpg"
+          alt="Staff UNTL"
+        />
+      </div>
+
+      <!-- Kontaktu -->
+      <div id="kontaktu" class="section">
+        <h2>Kontaktu</h2>
+        <p>Email: info@untl.edu.tl</p>
+        <p>Telefone: +670 77334455 / +670 77221100</p>
+        <p>Facebook: facebook.com/untlofisial</p>
+        <p>Enderesu: Avenida Xavier do Amaral, Díli</p>
+        <img
+          src="https://www.untl.edu.tl/public/img/contact.jpg"
+          alt="Kontaktu"
+        />
+      </div>
     </div>
-</section>
 
+    <div class="footer">
+      <p>&copy; 2025 Escola UNTL. Diréitu hotu rezerva.</p>
+    </div>
 
-    <!-- About Section -->
-    <section id="KONA-BA" class="container">
-      <h3>KONA BA </h3>
-      <p>
-        Fiar aan lao ba Oin. 
-      </p>
-    </section>
+    <script>
+      function showSection(id) {
+        const sections = document.querySelectorAll(".section");
+        sections.forEach((section) => {
+          section.classList.remove("active");
+        });
 
-    <!-- Contact Section -->
-    <section id="contact" class="container">
-      <h3>Knntaktu</h3>
-      <p>iha buat ruma bele liga mai hau </p>
-      <p><strong>Email:</strong> malalevarudo21@gmail.com</p>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <p>&copy; Hau nia website 2025.</p>
-      </div>
-    </footer>
+        const target = document.getElementById(id);
+        target.classList.add("active");
+      }
+    </script>
   </body>
 </html>
